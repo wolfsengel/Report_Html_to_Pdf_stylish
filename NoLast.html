@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin-top: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header {
+            background-color: gray;
+            border-radius: 30px;
+            padding-left: 20px;
+            padding-top: 10px;
+            width: 300px;
+            height: 150px;
+            padding-right: 10px;
+            padding-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .header>p{
+            font-size: medium ;
+        }
+        h1 {
+            font-size: 25px;
+            font-weight: normal;
+        }
+
+        h1:first-of-type {
+            font-style: italic;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 15px;
+        }
+
+
+        th {
+            background-color: gray;
+        }
+
+        table {
+            /*para que non quede a cor en anacos nas filas */
+            border-collapse: collapse;
+            border: 1px solid gray;
+        }
+
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        p {
+            text-align: left;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-size: xx-small;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .first {
+            padding-left: 15px;
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .last {
+            padding-right: 11px;
+        }
+
+        table.ojete>th>p {
+            text-align: center;
+        }
+    </style>
+    </style>
+    <title>Stampa</title>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            --logo--
+            <!--foto de proba-->
+            <div class="header">
+                <p>Spett. le</p>
+                <p>--wrasoc--</p>
+                <p>--wraso1--</p>
+                <p>--windir--</p>
+                <p>--wlocal--</p>
+            </div>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <th style="width: 30%;" class="first">
+                        <!--quedei aqui-->
+                        <p>Tipo Documento</p>
+                    </th>
+                    <th style="width:10%">
+                        <p>Data</p>
+                    </th>
+                    <th style="width: 10%;" colspan="2">
+                        <p class="center">Numero</p>
+                    </th>
+                    <th style="width: 10%;">
+                        <p>Cod. Cliente</p>
+                    </th>
+                    <th style="width:10%;">
+                        <p>Dest.</p>
+                    </th>
+                    <th>
+                        <p>P.Iva / C.F.</p>
+                    </th>
+                    <th>
+                        <p>Mag.</p>
+                    </th>
+                    <th>
+                        <p>Operatore</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="first">
+                        <p>--wtidoc--</p>
+                    </td>
+                    <td>
+                        <p>--wdafat--</p>
+                    </td>
+                    <td>
+                        <p class="right">--wnufat--</p>
+                    </td>
+                    <td>
+                        <p>--wsgfat--</p>
+                    </td>
+                    <td>
+                        <p>--wcoana--</p>
+                    </td>
+                    <td>
+                        <p>--wcodes--</p>
+                    </td>
+                    <td>
+                        <p>--wcofis--</p>
+                    </td>
+                    <td>
+                        <p>--wcomag--</p>
+                    </td>
+                    <td>
+                        <p>--wopera--</p>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th class="first" style="width: 30;">
+                        <p>Modalità di pagamento</p>
+                    </th>
+                    <th>
+                        <p>IBAN</p>
+                    </th>
+                    <th>
+                        <p>SWIFT</p>
+                    </th>
+                    <th>
+                        <p>Banca</p>
+                    </th>
+                    <th>
+                        <p>Abi</p>
+                    </th>
+                    <th>
+                        <p>Cab</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="first">
+                        <p>--wdepag--</p>
+                    </td>
+                    <td>
+                        <p>--wiban--</p>
+                    </td>
+                    <td>
+                        <p>--wswift--</p>
+                    </td>
+                    <td>
+                        <p>--wbanca--</p>
+                    </td>
+                    <td>
+                        <p>--wabi--</p>
+                    </td>
+                    <td>
+                        <p>--wcab--</p>
+                    </td>
+                </tr>
+            </table>
+            <table class="ojete">
+                <tr>
+                    <th class="first" style="width: 13%;">
+                        <p>Codice</p>
+                    </th>
+                    <th style="width: 33%;">
+                        <p>Descrizione</p>
+                    </th>
+                    <th style="width: 3%;">
+                        <p>Um</p>
+                    </th>
+                    <th style="width: 3%;">
+                        <p>Colli</p>
+                    </th>
+                    <th style="width: 9%;">
+                        <p>Quantità</p>
+                    </th>
+                    <th style="width: 11%;">
+                        <p>Prezzo unit.</p>
+                    </th>
+                    <th style="width: 5%;">
+                        <p>Sconti</p>
+                    </th>
+                    <th style="width: 5%;">
+                        <p>Importo</p>
+                    </th>
+                    <th style="width: 10%;">
+                        <p>Codice iva</p>
+                    </th>
+                </tr>
+
+                
